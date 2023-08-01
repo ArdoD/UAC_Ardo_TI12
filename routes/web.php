@@ -43,6 +43,7 @@ Route::put('/payment', [PaymentController::class, 'store']);
 
 Route::get('/topup', [PaymentController::class, 'topupPage']);
 Route::put('/topup', [PaymentController::class, 'topup']);
+Route::put('/topupInstant', [PaymentController::class, 'topupInstant']);
 
 Route::get('/logout', [LoginController::class, 'logout']);
 

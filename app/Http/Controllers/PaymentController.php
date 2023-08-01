@@ -30,6 +30,14 @@ class PaymentController extends Controller
         return redirect('/home');
     }
 
+    public function topupInstant(){
+        $money = User::find(auth()->user()->id);
+        // $money = auth()->user()->wallet;
+        $money->wallet = $money->wallet + 100;
+        $money->update();
+        return redirect('/home');
+    }
+
     public function topupPage(){
         return view("topup");
     }

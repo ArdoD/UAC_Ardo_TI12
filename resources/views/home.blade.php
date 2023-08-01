@@ -9,6 +9,15 @@
                 <a href="/topup" class="button bg-green-600 text-white px-4 py-3">
                     Topup
                 </a>
+                <br>
+                <br>
+                <form action="/topupInstant" method='post'>
+                @csrf
+                @method('put')
+                    <button type="submit" class="button bg-green-600 text-white px-4 py-3">
+                        Instantly add 100 coins
+                    </button>
+                </form>
             </div>
             <br>
             <div class="grid grid-cols-3">

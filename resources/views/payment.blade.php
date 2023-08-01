@@ -28,7 +28,7 @@
     <script>
         function validateWallet(money){
             if(wallet < price){
-                alert("Your wallet gak cukup!");
+                alert("Not enough Money");
                 return false;
             }
             return true;
